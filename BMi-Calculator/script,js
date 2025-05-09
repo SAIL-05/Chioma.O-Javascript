@@ -1,0 +1,30 @@
+
+// Write a program that caluculates the Body Mass Index (BMI) and categorise it.The formula for BMI 
+// is ; weight / (height * height).
+// Underweight(below 18.5), Healthy Weight (18.5 to 24.9), Overweight (25 o 29.9), and Obesse (30 or greater)
+
+//Solution
+// Underweight: BMI < 18.5
+// Healthy: 18.5 ≤ BMI ≤ 24.9
+// Overweight: 25 ≤ BMI ≤ 29.9
+// Obese: BMI ≥ 30
+
+let height = parseFloat(prompt('Enter your HEIGHT in meters (e.g., 1.75)'));
+let weight = parseFloat(prompt('Enter your WEIGHT in kg (e.g., 68)'));
+let BMI = weight / (height * height);
+
+if (BMI < 18.5) {
+    alert(`You are underweight. BMI = ${BMI.toFixed(2)}`);
+}
+else if (BMI >= 18.5 && BMI <= 24.9) {
+    alert(`You are healthy. BMI = ${BMI.toFixed(2)}`);
+}
+else if (BMI >= 25 && BMI <= 29.9) {
+    alert(`You are overweight. BMI = ${BMI.toFixed(2)}`);
+}
+else if (BMI >= 30) {
+    alert(`You are obese. BMI = ${BMI.toFixed(2)}`);
+}
+else {
+    alert('Invalid input');
+}
