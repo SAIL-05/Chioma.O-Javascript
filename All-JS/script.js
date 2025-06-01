@@ -24,6 +24,58 @@ console.log(200);
 
 //  Alert
 
+const yearOfBirth = document.getElementById('age')
+
+const input = Number(prompt('Date of birth'))
+
+yearOfBirth.textContent = `you are ${(2025 - input)} years old`
+
+const yrOfBirth = document.getElementById('age')
+const ageAns = document.getElementById('ageAns')
+const btn = document.getElementById('btn')
+
+
+function smbBtn (){
+    let answer = Number(yrOfBirth.value)
+    console.log(answer)
+    ageAns.textContent = `you are ${(2025 - answer)} years old` 
+    // console.log(ageAns.textContent = `you are ${(2025 - answer)} years old` )
+}
+
+btn.addEventListener('click', smbBtn)
+
+//Write a program that calculates the ticket price based on age with the following conditions: 
+// age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 
+// pay a ticket price of 20, age over 60 play a ticket price of 15.
+
+// let age = parseInt(prompt('Enter your age'))
+// let discount;
+
+// if (age >= 60){
+//     discount = 15
+//     alert(`you have a discount of $${discount}`)
+// }
+// else if (age >= 18 && age < 60){
+//     discount = 20
+//     alert(`you have a discount of $${discount}`)
+// }
+
+// else if (age >= 12 && age < 18){
+//     discount = 10
+//     alert(`you have a discount of $${discount}`)
+// } 
+
+// else if (age <= 0){
+//     alert(`enter a valid age number`)
+// }
+
+// else{
+//     discount = 5
+//     alert(`you have a discount of $${discount}`)
+// }
+
+
+
 // alert("correct");
 //alert("all the best");
 //alert("welcome to my site");
