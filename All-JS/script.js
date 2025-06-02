@@ -768,6 +768,59 @@ let b = document.createElement('li');
 b.textContent = a.value;
 document.getElementById('mylist').appendChild(b);
 }
+// Asynchronouu JS
+// Javascript excutes in a serial order
+// while some code taakes a longer times asynchronous help you to
+// to execute many codes
+// by default JS is synchronous
+// but we can make it asynchronous
+
+console.log(" first task");
+console.log(" second task");
+console.log(" third task");
+console.log(" fourth task");
+console.log(" continue task");
+
+
+// setTimeout is an asynchronous function
+setTimeout(() => {
+    console.log("this is a callback function");
+}, 2000); // 2000 milliseconds = 2 seconds
+
+// a callback function is a function that is passed as an
+//  argument to another function
+
+const caller = (callback) => {
+    console.log("caller function");
+    callback();
+}
+
+// The Fetch API 
+// Types of requests
+// get, post, put, delete
+// get request is used to fetch data from a server
+// post request is used to send data to a server
+// put request is used to update data on a server
+// delete request is used to delete data from a server
+const fetchData = async () => {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error("There has been a problem with your fetch operation:", error);
+    }
+}
+
+// .then(() => {
+//     console.log("Data fetched successfully");
+// })      
+// .catch((error) => {
+//     console.error("Error fetching data:", error);
+// });     
 
 
 
