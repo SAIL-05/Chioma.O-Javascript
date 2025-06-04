@@ -760,14 +760,82 @@ btn.addEventListener('click', smbBtn)
 // }
 
 
-
-
 function myTodo() {   
 let a = document.getElementById('input-box'); 
 let b = document.createElement('li');
 b.textContent = a.value;
 document.getElementById('mylist').appendChild(b);
 }
+
+// function degree (){
+//     let Celsius = parseInt(prompt('enter number'))
+//     let result = (Celsius * 9/5)+32
+
+//     alert(result)
+// }
+// degree()
+
+
+// dom means document object model used to alter the html and css  it controlls html and css from js includes ;
+// document.getElementsByClassName
+// document.getElementById
+// document.querySelector
+// document.querySelectorAll
+
+
+// textContent
+// innerHTML
+// innerText
+// are used to get the content of a class or id
+
+// document.getElementById('kid').textContent = 'updated'
+
+
+// console.log(document.querySelectorAll('li'))
+// document.querySelectorAll('li')[3].textContent = 'sugaerhughaeruivnh'
+
+// document.querySelectorAll('li')[4].textContent = 'yellow garri'
+
+// Event LISTENERS 
+//  they are used to carry out action based on an event you want to use eg onclick
+// you can use thme in your html or your js
+
+
+
+//  for loop  ( 1. initilaizer 2. condition 3. increment or decrement+)
+
+// for (let i = 0 ; i <= 10; i += 3) {
+//     console.log(i)
+// }
+
+// for(let i = 1; i < 50 ;i++) {
+//           if(i % 2 === 0) {
+//               console.log(i, ' is an even number')
+//           } else {
+//               console.log(i, ' is an odd number')
+        
+//         }
+//     }
+
+// document.querySelectorAll('h1')[3] .innerText ='i have been changed'
+
+ 
+// function btn (){
+//   let contain =  document.querySelector('h1')
+
+//     if(contain.textContent === "open"){
+//             }
+// }
+
+    //    asynchronous javascript 
+
+    // setTimeout(() => {
+        
+    // }, timeout);  is used to set time a block of code will show 
+
+    callback is used To
+
+
 // Asynchronouu JS
 // Javascript excutes in a serial order
 // while some code taakes a longer times asynchronous help you to
