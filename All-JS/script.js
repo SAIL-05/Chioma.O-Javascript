@@ -892,3 +892,32 @@ const fetchData = async () => {
 
 
 
+//DOM 
+//getElementsWithClass
+//getElementWithId
+//querySelector
+//querySelectAll
+
+//Asynchronoush javascript
+//console.log("https://jsonplaceholder.typicode.com/users")
+//fetch("https://jsonplaceholder.typicode.com/users").then(hay => hay.json()).then(data => console.log(data))
+
+//try catch statement
+//try catch finally
+
+try{
+  fetch(url);
+}
+catch (err){
+  console.log(err);
+}
+finally{
+
+}
+
+async function getAllPost() {
+  let blogBlogData = await fetch("https://jsonplaceholder.typicode.com/posts");
+  let realBlogData = await blogPosts.json();
+  console.log(realBlogData)
+  
+
