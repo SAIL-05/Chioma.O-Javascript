@@ -1105,5 +1105,49 @@ let student = {
    
 
 
+let myname: string = 'chioma';
+let score: number = 100;
+
+
+
+//Two ways of assinging Typescritp
+//1. inference;     let TypeScript infer the type of a variable based on its value
+//2. anottation ; you specify the type of a variable
+
+// union e.g let score: number | string = 100;
+
+// Create a function that calculates interest rate and returns 
+// 3 parameters
+
+// function calculateInterestRate(principal: number, rate: number, time: number): number {
+//     return (principal * rate * time) / 100;
+// }
+
+// function substractTwoNumbers(): string {
+//     let num1: number = 10;
+//     let num2: number = 5;
+//     let result: number = num1 - num2;
+//     return `The result is ${result}`;
+// }
+
+// function getUserName() {
+//     let username: any = prompt('Enter your name');
+// }
+
+// // create a function that takes 4 parameters(abcd) and the function should always 
+// // return a number 
+// function getHighestNumber(a: number, b: number, c: number, d: number): number {
+//     return Math.max(a, b, c, d);
+// }
+
+// // Typescript worrks with objects 
+// let studentData: { name: string, grade: string, score: number, pass: boolean } = {
+   
+//     name:  "chioma",
+//     grade: 'A+',  
+//     score: 100,
+//     pass: true,
+// };
+    
 
 
