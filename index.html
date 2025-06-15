@@ -23,5 +23,63 @@
 			<source src="./myvideo/vid.mp4" />
 		</video>
 		<button>Submmit Here</button>
+
+  <h1>JavaScript Mini Programs</h1>
+  <p>Open your browser's console to see the output (Right-click → Inspect → Console).</p>
+
+  <script>
+    // 1. Leap Year Checker
+    function isLeapYear(year) {
+      if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        console.log(year + " is a leap year.");
+      } else {
+        console.log(year + " is not a leap year.");
+      }
+    }
+    isLeapYear(2024); // Change year here
+
+    // 2. Discount Calculator
+    function calculateDiscount(price) {
+      let discount = 0;
+      if (price >= 100) {
+        discount = 20;
+      } else if (price >= 50) {
+        discount = 10;
+      }
+      console.log(`Purchase amount: $${price}`);
+      console.log(`Discount applied: $${discount}`);
+      console.log(`Final price: $${price - discount}`);
+    }
+    calculateDiscount(75); // Change price here
+
+    // 3. Time-Based Greeting
+    function greetUser() {
+      const hour = new Date().getHours();
+      if (hour >= 5 && hour < 12) {
+        console.log("Good morning!");
+      } else if (hour >= 12 && hour < 17) {
+        console.log("Good afternoon!");
+      } else {
+        console.log("Good evening!");
+      }
+    }
+    greetUser();
+
+    // 4. Number Guessing Game
+    function guessNumber(secret, guess) {
+      if (guess === secret) {
+        console.log("Correct! You guessed the number.");
+      } else if (guess > secret) {
+        console.log("Too high! Try a lower number.");
+      } else {
+        console.log("Too low! Try a higher number.");
+      }
+    }
+    guessNumber(7, 5); // Change secret and guess here
+  </script>
+</body>
+</html>
+
+		
 	</body>
 </html>
