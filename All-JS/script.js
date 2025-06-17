@@ -1061,6 +1061,144 @@ let student = {
 // }
 
 
+console.log("Hello, World!");
+console.log("This is a test script.");
+
+
+// let x = 5;
+// let y = 10;
+
+
+// let myAge = 25;
+// let myName = "John Doe";
+
+
+// //Strings
+// //e.g of where to use single and double quotes
+// let myString = "Hello, I'm John Doe"; //String concatenation
+// let myString2 = 'Hello, I\'m John Doe'; //String concatenation with escape character
+
+
+// let kate = "today is Kate's birthday"; //String concatenation
+// let kate2 = 'today is Kate\'s birthday'; //String concatenation with escape character
+
+
+// //Boolean is a data type that can only be true or false, 0 or 1, yes or no, on or off
+// let isTrue = true;
+
+
+// //underfined is a data type that has no value, it is not defined yet
+// let myVar; //undefined
+// // you created a variable but you don't assign it a value yet, so it is undefined
+
+
+// //null is a data type that has no value, it is defined as null
+// let myVar2 = null; //null
+
+
+// //non-primitive data types
+// //Objects are a data type that can hold multiple values in a single variable
+// // it makes use of key and value pairs
+// // e.g. of an object
+// let myObject = {
+//   name: "John Doe",
+//   age: 25,
+//   isStudent: false,
+//   hobbies: ["reading", "gaming", "coding"],
+//   address: {
+//     street: "123 Main St",
+//     city: "New York",
+//     state: "NY",
+//     zip: "10001"
+//   }
+// };
+// //Arrays are a data type that can hold multiple values in a single variable
+// // it makes use of index numbers to access the values
+// // e.g. of an array
+
+
+
+
+// //Operators;//Assignment operators: =, +=, -=, *=, /=, %=, **=
+// let myArray = [1, 2, 3, 4, 5]; //Array of numbers
+
+
+
+
+// //Arithmetic operators: +, -, *, /, % (modulus), ** (exponentiation), ++ (increment), -- (decrement)
+// let Y = 5;
+// let K = 10;
+// //Addition
+// const sum = a + b;
+// console.log("Sum: " + sum); //Output: Sum: 15
+
+
+// //comparison operators: is used to compare 2 value and it returns a boolean answer. here is the symbol ==, ===, !=, !==, >, <, >=, <=
+
+
+// //conditional statements: if, else if, else, switch
+// //e.g. of an if statement
+// let a = 5;
+// let b = 10;
+// if (a < b) {
+//   console.log("a is less than b");
+// }
+// if (a > b) {
+//   console.log("a is greater than b");
+// }
+
+
+
+
+// const userNumber = parseInt(prompt("Enter a number: "));
+
+
+// if (userNumber > 0) {
+//   alert('${userNumber} is a positive number');
+// } else if (userNumber === 0) {
+//     alert('${userNumber} is invalid');
+//   } else {
+//   }
+//   alert('this is not a number');
+//  else {
+//       alert('${userNumber} is a negative number');
+//     }
+ 
+
+
+    // write a program that checks if a number is even or odd
+    // const Mynuber = parseInt(prompt("Enter a number: "));
+
+
+  let grade = parseInt(prompt("Enter your grade: "));
+    if (grade >= 0 && grade <= 39) {
+      alert("F");
+    } else if (grade >= 40 && grade <= 49) {
+      alert("D");
+    } else if (grade >= 50 && grade <= 59) {
+      alert("C");
+    } else if (grade >= 60 && grade <= 69) {
+      alert("B");
+    } else if (grade >= 70 && grade <= 100) {
+      alert("A");
+    } else {
+      alert("Invalid grade");
+    }
+
+
+    // if (grade <= 39) {
+    //   alert("F");
+    // } else if (grade <= 40) {
+    //   alert("D");
+    // } else if (grade <= 50) {
+    //   alert("C");
+    // } else if (grade <= 60) {
+    //   alert("B");
+    // }
+
+
+    // write a program that calculates the body mass index (BMI) of a person and catergorises it as underweight, normal weight, overweight, or obese.
+
 // // The Fetch API
 // // Types of requests
 // // get, post, put, delete
@@ -1199,8 +1337,6 @@ else {
     // newDiv.appendChild(newText);
 
     // movieContainer.appendChild(newDiv);
-
-
 
     // DISPLAY ALL MOVIES
 
